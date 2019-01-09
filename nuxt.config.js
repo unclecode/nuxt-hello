@@ -3,6 +3,14 @@ const pkg = require("./package");
 module.exports = {
   mode: "universal",
 
+  generate: {
+    routes: [
+      '/posts/1',
+      '/posts/2',
+      '/posts/3'
+    ]
+  },
+
   /*
    ** Headers of the page
    */
@@ -30,7 +38,7 @@ module.exports = {
    ** Global CSS
    */
   css: [
-    'bulma',
+    // 'bulma',
     // '~/assets/global.css',
     '~/assets/global.styl'
   ],
